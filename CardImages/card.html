@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+   	    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>Cards Gallery</title>
+		<style>
+			.cards {
+				display: flex;
+				flex-wrap: wrap;
+				flex-direction: row;
+				align-items: stretch;
+				/* flex-direction: column; 
+							align-items: flex-end;
+							align-items: flex-start;
+							align-items: center;  */
+			}
+
+			.card {
+				flex: 0 0 200px;
+				margin: 10px;
+				border: 1px solid #ccc;
+				box-shadow: 2px 2px 6px 0px rgba(0, 0, 0, 0.3);
+			}
+
+			.card img {
+				max-width: 100%;
+				align-content: center;
+			}
+
+			.card .content {
+				padding: 0 20px 20px;
+			}
+
+			.card .content>button {
+				background: gray;
+				border: 0;
+				color: white;
+				padding: 10px;
+				width: 100%;
+			}
+
+			.card:nth-child(1) {
+				width: 420px;
+			}
+		</style>
+	</head>
+
+	<body class="cards">
+		<article class="card">
+			<img src="lambo.jpg" width="300" height="400">
+			<div class="content">
+				<h3>AVENTADOR</h3>
+				<p>The Aventador is a 6.5L V12 powered all-wheel-drive monster, with that engine putting out 760 HP and 531 lb-ft of torque..</p>
+				<button>Read More</button>
+			</div>
+		</article>
+
+        <article class="card">
+			<img src="mclaren.jpg" width="300" height="400">
+			<div class="content">
+				<h3>MCLAREN720S</h3>
+				<p>Known as the M840T, the engine is a 4.0L twin-turbocharged V8 that outputs 719 HP and 568 lb-ft of torque and produced at peak.</p>
+				<button>Read More</button>
+			</div>
+		</article>
+
+		<article class="card">
+			<img src="audi.jpg" width="300" height="400">
+			<div class="content">
+				<h3>AUDIR8V12</h3>
+				<p> With the help of twin turbochargers and intercoolers the R8 V12 TDI develops 500 hp and 738 lb-ft of torque @ 1750 - 3000 rpm.</p>
+				<button>Read More</button>
+			</div>
+		</article>
+	</body>
+
+</html>
